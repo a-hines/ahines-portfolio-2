@@ -28,7 +28,7 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 45px;
     color: var(--primary-color);
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -56,7 +56,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 35px;
     font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
@@ -70,25 +70,45 @@ header nav ul li a:hover{
 /* about me style start */
 .bio-content {
     background-image: url(../images/background-1.jpg);
-    height:600px;
+    height:400px;
     background-size: cover;
+    overflow: auto;
+}
+
+.bio-content h2 {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 40px;
+    color: var(--primary-color);
+    padding: 10px 100px 0 100px;
 }
 
 .bio-content img {
+    width: 20%;
+    float: left;
     padding: 20px;
 }
 
 .bio-content p {
-    display: inline;
     padding: 20px;
-    float: right;
+    font-size: 20px;
+    color: var(--tertiary-color);
+    float: left;
+    width: 80%;
 }
 /* about me style end */
 
 /* my work style start */
 .work-content {
-    background-color: (var(--tertiary-color));
+    background-color: (var(--primary-color));
 }
+
+.work-content h2 {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 40px;
+    color: var(--primary-color);
+    padding: 10px 100px 0 100px;
+}
+
 /* my work style end */
 
 /* contact me style start */
@@ -107,12 +127,18 @@ header nav ul li a:hover{
     color:var(--primary-color);
     border: solid 3px var(--primary-color);
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     right: 500px;
 }
 
 .contact-form h2 {
     font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 36px;
+}
+
+.contact-form p {
+    margin: 5px 0 15px 0;
+    font-size: 16px;
 }
 
 .contact-form input {
@@ -128,4 +154,7 @@ header nav ul li a:hover{
 .contact-form button {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    font-size: 20px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    padding: 5px;
 }
