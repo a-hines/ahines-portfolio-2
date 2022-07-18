@@ -69,10 +69,10 @@ header nav ul li a:hover{
 
 /* about me style start */
 .bio-content {
-    background-image: url(../images/background-1.jpg);
     height:400px;
     background-size: cover;
     overflow: auto;
+    background-image: url(../images/background-1.jpg);
 }
 
 .bio-content h2 {
@@ -99,7 +99,7 @@ header nav ul li a:hover{
 
 /* my work style start */
 .work-content {
-    background-color: (var(--primary-color));
+    background-color: var(--tertiary-color);
 }
 
 .work-content h2 {
@@ -109,15 +109,27 @@ header nav ul li a:hover{
     padding: 10px 100px 0 100px;
 }
 
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons a {
+    width: 100px;
+    height: 200px;
+}
+
 /* my work style end */
 
 /* contact me style start */
 .contact-content {
-    background-image: url(../images/background-1.jpg);
     height: 400px;
     background-size: cover;
     background-position: center;
     position: relative;
+    background-image: url(../images/background-1.jpg)
 }
 
 .contact-form {
