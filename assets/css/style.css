@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 header {
@@ -37,7 +37,6 @@ header h1 {
 header a {
     text-decoration: none;
     color: var(--primary-color);
-    font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
 header nav {
@@ -57,7 +56,6 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 35px;
-    font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
 header nav ul li a:hover{
@@ -68,38 +66,48 @@ header nav ul li a:hover{
 }
 
 /* about me style start */
-.bio-content {
-    height:400px;
+.bio {
     background-size: cover;
     overflow: auto;
     background-image: url(../images/background-1.jpg);
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
 }
 
-.bio-content h2 {
-    font-family: Brush Script MT, Brush Script Std, cursive;
+.bio h2 {
     font-size: 40px;
     color: var(--primary-color);
     padding: 10px 100px 0 100px;
 }
 
+.bio-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
 .bio-content img {
-    width: 20%;
-    float: left;
-    padding: 20px;
+    width: 20;
+    margin: 3.5%;
+    border-color: var(--primary-color);
+    border-radius: 15px;
+    box-shadow: 1px 5px 8px var(--tertiary-color);
+}
+
+.transbox {
+    padding: 5px;
+    background: hsla(0, 100%, 90%, 0.3);
+    border-radius: 15px;
+    width: 65%;
+    margin: 3.5%;
 }
 
 .bio-content p {
-    padding: 20px 0;
-    font-size: 18px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
     color: var(--tertiary-color);
-    width: 80%;
     text-align: left;
-    margin: 3.5%;
-    line-height: 1.3;
-    text-indent: 30px;
+    line-height: 1.5;
 }
 /* about me style end */
 
@@ -109,7 +117,6 @@ header nav ul li a:hover{
 }
 
 .work-content h2 {
-    font-family: Brush Script MT, Brush Script Std, cursive;
     font-size: 40px;
     color: var(--primary-color);
     padding: 10px 100px 0 100px;
@@ -142,26 +149,27 @@ header nav ul li a:hover{
 
 /* contact me style start */
 .contact-content {
-    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
     background-size: cover;
     background-position: center;
-    position: relative;
     background-image: url(../images/background-1.jpg)
 }
 
 .contact-form {
     background-color: var(--tertiary-color);
     padding: 20px;
-    width: 500px;
+    margin: 30px;
     color:var(--primary-color);
     border: solid 3px var(--primary-color);
-    position: absolute;
     bottom: 10px;
     right: 500px;
+    border-radius: 15px;
 }
 
 .contact-form h2 {
-    font-family: Brush Script MT, Brush Script Std, cursive;
     font-size: 36px;
 }
 
@@ -184,7 +192,6 @@ header nav ul li a:hover{
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-size: 20px;
-    font-family: Brush Script MT, Brush Script Std, cursive;
     padding: 5px;
 }
 /* contact me style end*/
