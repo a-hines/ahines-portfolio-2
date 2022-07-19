@@ -126,7 +126,7 @@ header nav ul li a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: fit-content;
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -199,29 +199,38 @@ header nav ul li a:hover{
 /* Meida Query for Smaller Desktop and Laptop Screens and Larger Tablets */
 @media screen and (max-width: 980px) {
 
-.icons a {
-    width: 400px;
-    min-width: 0;
-    
-}
+    .bio-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
 
 }
 
 /* Media Query for Smaller Tablets and Mobile Phones in Landscape */
 @media screen and (max-width: 768px) {
 
-.icons a {
-    width: 300px;
-    min-width: 0;
-
+    .icons {
+        justify-content: center;
     }
+
+    .icons a {
+        width: 100%;
+    }
+
 }
 
 /* Media Query for Mobile Phones in Portrait */
 @media screen and (max-width: 575px) {
 
-.icons a {
-    width: 200px;
-    min-width: 0;
+    .icons {
+        justify-content: center;
     }
+
+    .icons a {
+        width: 100%;
+    }
+
+
 }
